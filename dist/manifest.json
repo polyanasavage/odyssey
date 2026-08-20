@@ -1,13 +1,17 @@
 {
   "manifest_version": 3,
   "name": "Odyssey",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Расширение для работы с Arizona LogsParser.",
   "permissions": [
-    "storage"
+    "storage",
+    "proxy",
+    "webRequest",
+    "webRequestAuthProvider"
   ],
   "host_permissions": [
     "https://arizonarp.logsparser.info/*",
+    "https://api.ipify.org/*",
     "http://ip-api.com/*",
     "https://items.sillyfrog.net/*"
   ],
@@ -37,7 +41,8 @@
       ],
       "css": [
         "styles/plex.css",
-        "styles/content.css"
+        "styles/logsparser.css",
+        "styles/odyssey-ui.css"
       ],
       "run_at": "document_end"
     }
